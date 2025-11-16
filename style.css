@@ -1340,3 +1340,233 @@ h1, h2, h3, h4, h5, h6 {
         padding: 1rem;
     }
 }
+
+/* === New AI Projects Page (Entora Group AI Projects) === */
+
+/* Body style only for ai-projects.html */
+.entora-body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, rgba(0, 212, 255, 0.12), transparent 55%),
+                radial-gradient(circle at bottom, rgba(0, 153, 204, 0.10), #020016 60%);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Header / Navbar for AI Projects page */
+.entora-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    backdrop-filter: blur(12px);
+    background: rgba(10, 14, 39, 0.92);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.entora-logo {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+}
+
+.entora-logo span {
+    color: var(--accent-color);
+    text-shadow: 0 0 12px rgba(0, 212, 255, 0.7);
+}
+
+.entora-nav a {
+    margin-left: 16px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.entora-nav a:hover {
+    color: var(--text-primary);
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+}
+
+.entora-nav a.active {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.9);
+}
+
+/* Hero section on AI projects page */
+.entora-hero {
+    position: relative;
+    padding: 70px 40px 40px;
+    overflow: hidden;
+}
+
+.entora-hero .hero-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 1;
+}
+
+.entora-hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+    text-shadow: 0 0 18px rgba(0, 212, 255, 0.35);
+}
+
+.entora-hero p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* glowing orbit in corner */
+.hero-orbit {
+    position: absolute;
+    right: -120px;
+    top: -120px;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.8) 0, rgba(15,23,42,0) 65%);
+    opacity: 0.7;
+    filter: blur(2px);
+}
+
+/* Projects section wrapper */
+.projects-section {
+    padding: 20px 40px 60px;
+}
+
+.projects-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+}
+
+.projects-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* Grid layout for project cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* Individual project card */
+.project-card {
+    background: var(--secondary-color);
+    border-radius: 18px;
+    padding: 18px 18px 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.45);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    background: radial-gradient(circle at top left, rgba(0, 212, 255, 0.16), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.7), 0 0 18px rgba(0, 212, 255, 0.4);
+}
+
+.project-header h3 {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+}
+
+.project-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+/* GitHub button */
+.project-github {
+    display: inline-block;
+    font-size: 0.86rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: var(--gradient-primary);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+    transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.project-github:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 16px rgba(0, 212, 255, 0.8);
+}
+
+/* Team list under each project */
+.project-team h4 {
+    font-size: 0.88rem;
+    margin: 6px 0 4px;
+    color: var(--text-muted);
+}
+
+.project-team ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-team li {
+    font-size: 0.86rem;
+}
+
+.project-team a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.project-team a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.75);
+}
+
+/* Footer for AI projects page */
+.entora-footer {
+    text-align: center;
+    padding: 20px 16px 28px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Responsive tweaks for AI projects */
+@media (max-width: 768px) {
+    .entora-header {
+        padding: 12px 20px;
+    }
+    .entora-hero {
+        padding: 70px 20px 30px;
+    }
+    .projects-section {
+        padding: 10px 20px 50px;
+    }
+}
+
+
