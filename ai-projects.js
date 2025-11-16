@@ -4,29 +4,37 @@
 // Just edit this array when you add new projects.
 const projects = [
   {
-    name: "Project Nebula",
-    description: "An AI model that generates deep-space inspired visuals and textures for research and creativity.",
-    github: "https://github.com/entora/project-nebula",
+    name: "Project GreenGrow",
+    description: "GreenGrow – An AI-Powered Farming Assistant Platform. ",
+    github: "https://github.com/sudipta200507/GreenGrow.git",
     team: [
-      { name: "Sudipta Roy", linkedin: "https://linkedin.com/in/your-link" },
-      { name: "Member 2", linkedin: "#" }
+      { name: "Sudipta Roy", linkedin: "https://www.linkedin.com/in/sudipta-roy-a031bb251" },
+      { name: "Rimanshu Patel", linkedin: "https://www.linkedin.com/in/rimanshu-patel-246a79245" },
+      { name: "Somenath Gorai", linkedin: "https://www.linkedin.com/in/sov-ereign?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOfFk%2FtEYTPavdr0kFW6YCw%3D%3D" },
+      { name: "Monish Mondal", linkedin: "https://www.linkedin.com/in/monish-mondal-web?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIQ%2FK4EZJQNyOhS0yFJQBUQ%3D%3D" }
+      
     ]
   },
   {
-    name: "Quantum Chat",
-    description: "A lightweight experimental chatbot to assist in coding, note making, and research workflows.",
-    github: "https://github.com/entora/quantum-chat",
+    name: "Upcoming",
+    description: "Coming soon",
+    github: "https://github.com/entora/upcoming",
     team: [
-      { name: "Member 3", linkedin: "#" }
+      { name: "Member 1", linkedin: "#" },
+      { name: "Member 2", linkedin: "#" },
+      { name: "Member 3", linkedin: "#" },
+      { name: "Member 4", linkedin: "#" }
     ]
   },
   {
-    name: "BlackHole Insights",
-    description: "A data analysis pipeline that visualises and summarizes logs, metrics, and AI experiments.",
-    github: "https://github.com/entora/blackhole-insights",
+    name: "Upcoming",
+    description: "Coming soon",
+    github: "https://github.com/entora/upcoming",
     team: [
-      { name: "Member 4", linkedin: "#" },
-      { name: "Member 5", linkedin: "#" }
+      { name: "Member 1", linkedin: "#" },
+      { name: "Member 2", linkedin: "#" },
+      { name: "Member 3", linkedin: "#" },
+      { name: "Member 4", linkedin: "#" }
     ]
   }
 ];
@@ -68,3 +76,4 @@ function renderProjects() {
 }
 
 document.addEventListener("DOMContentLoaded", renderProjects);
+
