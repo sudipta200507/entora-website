@@ -6,7 +6,7 @@ const projects = [
   {
     name: "Project GreenGrow",
     description: "GreenGrow – An AI-Powered Farming Assistant Platform. ",
-    github: "https://github.com/sudipta200507/GreenGrow.git",
+    github: "https://github.com/sudipta200507/GreenGrow",
     team: [
       { name: "Sudipta Roy", linkedin: "https://www.linkedin.com/in/sudipta-roy-a031bb251" },
       { name: "Rimanshu Patel", linkedin: "https://www.linkedin.com/in/rimanshu-patel-246a79245" },
@@ -76,4 +76,5 @@ function renderProjects() {
 }
 
 document.addEventListener("DOMContentLoaded", renderProjects);
+
 
