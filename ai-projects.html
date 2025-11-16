@@ -1,236 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Projects/Tools - entora.space</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <title>Entora | AI Projects</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html" class="logo-text">&lt;entora.space&gt;</a>
-            </div>
-            <div class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="ai-projects.html" class="nav-link active">AI Projects/Tools</a>
-                <a href="join.html" class="nav-link">Join Us</a>
-                <a href="mailto:entoraofficial@gmail.com" class="nav-link contact-email">
-                    <i class="fas fa-envelope"></i> entoraofficial@gmail.com
-                </a>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+<body class="entora-body">
+  <!-- Navbar -->
+  <header class="entora-header">
+    <div class="entora-logo">entora<span>.space</span></div>
+    <nav class="entora-nav">
+      <a href="index.html">Home</a>
+      <a href="ai-projects.html" class="active">AI Projects</a>
+      <a href="join.html">Join Us</a>
     </nav>
+  </header>
 
-    <!-- AI Projects Header -->
-    <section class="ai-projects-header">
-        <div class="container">
-            <div class="header-content">
-                <h1 class="section-title">
-                    <span class="code-symbol">//</span> AI Projects & Tools
-                </h1>
-                <p class="header-description">
-                    Explore our cutting-edge AI solutions designed to solve real-world problems and enhance digital experiences.
-                </p>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="entora-hero">
+    <div class="hero-content">
+      <h1>Entora Group – AI Projects</h1>
+      <p>Deep-space inspired AI tools, research experiments, and creative systems built by the Entora team.</p>
+    </div>
+    <div class="hero-orbit"></div>
+  </section>
 
-    <!-- News Authenticity Checker -->
-    <section class="ai-tool-section">
-        <div class="container">
-            <div class="tool-card">
-                <div class="tool-header">
-                    <div class="tool-icon">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                    <div class="tool-info">
-                        <h2>News Authenticity Inspector</h2>
-                        <p>An AI-powered tool that analyzes news articles and URLs to determine their authenticity by cross-referencing with trusted sources.</p>
-                    </div>
-                </div>
-                
-                <div class="tool-content">
-                    <div class="input-section">
-                        <div class="input-group">
-                            <label for="newsInput" class="input-label">
-                                <i class="fas fa-newspaper"></i>
-                                Enter URL or Text
-                            </label>
-                            <div class="input-container">
-                                <textarea 
-                                    id="newsInput" 
-                                    placeholder="Paste a news article URL or enter the text you want to verify..."
-                                    rows="4"
-                                ></textarea>
-                                <div class="input-actions">
-                                    <button type="button" class="btn-clear" id="clearBtn">
-                                        <i class="fas fa-times"></i> Clear
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <button class="btn-verify" id="verifyBtn">
-                            <i class="fas fa-shield-alt"></i>
-                            <span class="btn-text">Check Authenticity</span>
-                            <div class="btn-loading" style="display: none;">
-                                <i class="fas fa-spinner fa-spin"></i>
-                                <span>Analyzing...</span>
-                            </div>
-                        </button>
-                    </div>
+  <!-- Projects Section -->
+  <main class="projects-section">
+    <h2>Our AI-Based Projects</h2>
+    <p class="projects-subtitle">
+      Each card shows the project, its GitHub repository, and the team members involved.
+    </p>
 
-                    <div class="results-section" id="resultsSection" style="display: none;">
-                        <div class="result-header">
-                            <h3>Analysis Results</h3>
-                            <div class="result-verdict" id="verdict">
-                                <!-- Verdict will be populated here -->
-                            </div>
-                        </div>
-                        
-                        <div class="result-details">
-                            <div class="confidence-score" id="confidenceScore">
-                                <!-- Confidence score will be populated here -->
-                            </div>
-                            
-                            <div class="sources-section" id="sourcesSection">
-                                <h4>Supporting Sources</h4>
-                                <div class="sources-list" id="sourcesList">
-                                    <!-- Sources will be populated here -->
-                                </div>
-                            </div>
-                            
-                            <div class="explanation" id="explanation">
-                                <!-- Explanation will be populated here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="projects-container" class="projects-grid">
+      <!-- JS will inject project cards here -->
+    </div>
+  </main>
 
-    <!-- How It Works Section -->
-    <section class="how-it-works">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="code-symbol">/*</span> How It Works <span class="code-symbol">*/</span>
-            </h2>
-            <div class="workflow">
-                <div class="workflow-step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Input Analysis</h3>
-                        <p>Our AI extracts the main claims and key information from your text or URL.</p>
-                    </div>
-                </div>
-                <div class="workflow-arrow">
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Source Search</h3>
-                        <p>We search trusted news sources and fact-checking databases for related information.</p>
-                    </div>
-                </div>
-                <div class="workflow-arrow">
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Evidence Analysis</h3>
-                        <p>AI compares your content with found sources to identify supporting or contradicting evidence.</p>
-                    </div>
-                </div>
-                <div class="workflow-arrow">
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Confidence Score</h3>
-                        <p>We provide a confidence score and detailed explanation of our findings.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Optional footer -->
+  <footer class="entora-footer">
+    <p>© <span id="year"></span> Entora.space • Built by Entora Group</p>
+  </footer>
 
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="code-symbol">//</span> Key Features
-            </h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Global Source Coverage</h3>
-                    <p>Access to worldwide reliable news sources and fact-checking organizations.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI-Powered Analysis</h3>
-                    <p>Advanced machine learning algorithms for accurate claim extraction and verification.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Confidence Scoring</h3>
-                    <p>Detailed confidence metrics to help you understand the reliability of our analysis.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Trusted Sources</h3>
-                    <p>Integration with reputable fact-checking organizations like PolitiFact, Snopes, and AP Fact Check.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">&lt;entora.space&gt;</span>
-                </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="ai-projects.html">AI Projects</a>
-                    <a href="join.html">Join Us</a>
-                    <a href="mailto:entoraofficial@gmail.com">Contact</a>
-                </div>
-                <div class="footer-contact">
-                    <p>entoraofficial@gmail.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 entora.space. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-    <script src="ai-projects.js"></script>
+  <script src="ai-projects.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
