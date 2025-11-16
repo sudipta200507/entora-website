@@ -1478,7 +1478,9 @@ h1, h2, h3, h4, h5, h6 {
     background: radial-gradient(circle at top left, rgba(0, 212, 255, 0.16), transparent 60%);
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;   /* 👉 THIS LINE */
 }
+
 
 .project-card:hover::before {
     opacity: 1;
@@ -1568,5 +1570,6 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px 20px 50px;
     }
 }
+
 
 
