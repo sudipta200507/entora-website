@@ -1478,7 +1478,7 @@ h1, h2, h3, h4, h5, h6 {
     background: radial-gradient(circle at top left, rgba(0, 212, 255, 0.16), transparent 60%);
     opacity: 0;
     transition: opacity 0.3s ease;
-    pointer-events: none;   /* 👉 THIS LINE */
+    pointer-events: none;
 }
 
 
@@ -1558,6 +1558,22 @@ h1, h2, h3, h4, h5, h6 {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* 🔗 Project Team LinkedIn Styling */
+.project-team li a {
+    display: inline-block;
+    padding: 2px 0;
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(126, 231, 255, 0.6);
+    transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.project-team li a:hover {
+    color: #ffffff;
+    border-color: rgba(126, 231, 255, 1);
+    text-shadow: 0 0 8px rgba(126, 231, 255, 0.9);
+}
+
 /* Responsive tweaks for AI projects */
 @media (max-width: 768px) {
     .entora-header {
@@ -1570,6 +1586,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px 20px 50px;
     }
 }
+
 
 
 
