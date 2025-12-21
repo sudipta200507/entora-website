@@ -1,162 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AI Services | entora.space</title>
-    <meta name="description" content="AI services by entora.space including AI agents, automation, chatbots, and custom AI systems for businesses.">
+<title>AI Services | entora.space</title>
 
-    <!-- Main Site CSS -->
-    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+:root {
+    --bg-dark: #050814;
+    --bg-card: rgba(255,255,255,0.06);
+    --accent: #00e5ff;
+    --text-main: #e9f1ff;
+    --text-muted: #9fb3d9;
+    --glow: 0 0 25px rgba(0,229,255,0.35);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #0b1c3f, #050814 65%);
+    color: var(--text-main);
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(5,8,20,0.85);
+    backdrop-filter: blur(12px);
+    padding: 16px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Fira Code', monospace;
+    font-size: 20px;
+    color: var(--accent);
+}
+
+.nav-links a {
+    margin-left: 24px;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* ================= HERO ================= */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    max-width: 900px;
+    line-height: 1.15;
+}
+
+.hero span {
+    color: var(--accent);
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 24px auto;
+    font-size: 18px;
+    color: var(--text-muted);
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 32px;
+    border-radius: 30px;
+    background: var(--accent);
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: var(--glow);
+}
+
+/* ================= SECTION ================= */
+.section {
+    padding: 90px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+/* ================= SERVICES GRID ================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--glow);
+}
+
+.card i {
+    font-size: 34px;
+    color: var(--accent);
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    color: var(--text-muted);
+}
+
+/* ================= PROCESS ================= */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 24px;
+}
+
+.step {
+    background: var(--bg-card);
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.step span {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* ================= CTA ================= */
+.cta {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle at center, #0b1c3f, #050814 70%);
+}
+
+.cta h2 {
+    font-size: 38px;
+}
+
+.cta a {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 16px 36px;
+    border-radius: 30px;
+    background: var(--accent);
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: var(--glow);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+</style>
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-logo">
-            <span class="logo-text">&lt;entora.space&gt;</span>
-        </div>
-
-        <div class="nav-menu">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="services.html" class="nav-link active">Services</a>
-            <a href="ai-projects.html" class="nav-link">AI Projects/Tools</a>
-            <a href="join.html" class="nav-link">Join Us</a>
-            <a href="mailto:entoraofficial@gmail.com" class="nav-link contact-email">
-                <i class="fas fa-envelope"></i> entoraofficial@gmail.com
-            </a>
-        </div>
-
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+<nav>
+    <div class="logo">&lt;entora.space&gt;</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="ai-projects.html">AI Projects</a>
+        <a href="join.html">Join Us</a>
+        <a href="mailto:entoraofficial@gmail.com">Contact</a>
     </div>
 </nav>
 
-<!-- ================= HERO ================= -->
 <section class="hero">
-    <div class="hero-container">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    AI Services Designed for
-                    <span class="gradient-text">Real Business Problems</span>
-                </h1>
-
-                <p class="hero-description">
-                    entora.space builds AI agents, automation systems, and intelligent
-                    solutions that help businesses save time, reduce costs, and scale faster.
-                </p>
-
-                <a href="mailto:entoraofficial@gmail.com" class="btn btn-primary">
-                    <i class="fas fa-envelope"></i> entoraofficial@gmail.com
-                </a>
-            </div>
-        </div>
+    <div>
+        <h1>AI Services Designed for <span>Real Business Problems</span></h1>
+        <p>
+            We build intelligent AI systems that automate operations, enhance decisions,
+            and help businesses scale faster.
+        </p>
+        <a href="mailto:entoraofficial@gmail.com">entoraofficial@gmail.com</a>
     </div>
 </section>
 
-<!-- ================= SERVICES ================= -->
-<section class="services">
-    <div class="container">
-        <h2 class="section-title">
-            <span class="code-symbol">//</span> Our Services
-        </h2>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-robot"></i>
-                <h3>AI Agents</h3>
-                <p>Autonomous AI systems for support, research, lead qualification, and operations.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-comments"></i>
-                <h3>AI Chatbots</h3>
-                <p>Custom chatbots trained on your business data for websites and internal use.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-cogs"></i>
-                <h3>AI Automation</h3>
-                <p>Automate emails, documents, workflows, and repetitive business processes.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Data Intelligence</h3>
-                <p>Turn raw business data into insights using AI-powered analytics.</p>
-            </div>
-
-            <div class="service-card">
-                <i class="fas fa-microchip"></i>
-                <h3>Custom AI Systems</h3>
-                <p>Industry-specific AI platforms built for security, scalability, and performance.</p>
-            </div>
-        </div>
+<section class="section">
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card"><i class="fas fa-robot"></i><h3>AI Agents</h3><p>Autonomous AI workers for support, research, and operations.</p></div>
+        <div class="card"><i class="fas fa-comments"></i><h3>AI Chatbots</h3><p>Custom chatbots trained on your business data.</p></div>
+        <div class="card"><i class="fas fa-cogs"></i><h3>AI Automation</h3><p>Workflow automation that saves time and cost.</p></div>
+        <div class="card"><i class="fas fa-chart-line"></i><h3>Data Intelligence</h3><p>AI-powered insights from raw business data.</p></div>
+        <div class="card"><i class="fas fa-microchip"></i><h3>Custom AI Systems</h3><p>Secure, scalable AI platforms built for your industry.</p></div>
     </div>
 </section>
 
-<!-- ================= HOW WE WORK ================= -->
-<section class="vision">
-    <div class="container">
-        <h2 class="section-title">
-            <span class="code-symbol">/*</span> How We Work <span class="code-symbol">*/</span>
-        </h2>
-
-        <ol class="how-it-works">
-            <li>Understand your business problem</li>
-            <li>Design AI strategy & solution</li>
-            <li>Develop & integrate AI systems</li>
-            <li>Test, deploy & optimize</li>
-            <li>Support & scale continuously</li>
-        </ol>
+<section class="section">
+    <h2>How We Work</h2>
+    <div class="steps">
+        <div class="step"><span>01</span> Understand your problem</div>
+        <div class="step"><span>02</span> Design AI strategy</div>
+        <div class="step"><span>03</span> Build & integrate</div>
+        <div class="step"><span>04</span> Test & deploy</div>
+        <div class="step"><span>05</span> Scale & support</div>
     </div>
 </section>
 
-<!-- ================= CTA ================= -->
-<section class="hero">
-    <div class="hero-container">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h2 class="hero-title">
-                    Ready to Use AI in Your Business?
-                </h2>
-
-                <p class="hero-description">
-                    Contact us directly to discuss AI solutions tailored for your needs.
-                </p>
-
-                <a href="mailto:entoraofficial@gmail.com" class="btn btn-primary">
-                    <i class="fas fa-envelope"></i> entoraofficial@gmail.com
-                </a>
-            </div>
-        </div>
-    </div>
+<section class="cta">
+    <h2>Ready to Transform Your Business with AI?</h2>
+    <a href="mailto:entoraofficial@gmail.com">entoraofficial@gmail.com</a>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <span class="logo-text">&lt;entora.space&gt;</span>
-            <p>entoraofficial@gmail.com</p>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 entora.space. All rights reserved.</p>
-        </div>
-    </div>
+<footer>
+    © 2025 entora.space — AI Solutions for the Future
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
