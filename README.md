@@ -23,6 +23,19 @@ npm run build
 npm run start
 ```
 
+## Deploy (Vercel)
+1. Import this GitHub repo in Vercel:
+   - https://github.com/sudipta200507/entora-website
+2. Framework preset: `Next.js`
+3. Root directory: repository root
+4. Build command: `npm run build`
+5. Output: default Next.js output
+
+### Domain Setup (`entora.space`)
+Update DNS to Vercel:
+- `A` record for `@` -> `76.76.21.21`
+- `CNAME` record for `www` -> `cname.vercel-dns.com`
+
 ## Project Structure
 ```text
 app/
@@ -54,7 +67,6 @@ data/
   process.ts
   services.ts
 public/
-  CNAME
   favicon.png
   googlebd708298028680ca.html
 ```
