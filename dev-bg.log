@@ -1,0 +1,60 @@
+
+> entora-website@1.0.0 dev
+> next dev --webpack --hostname 127.0.0.1 --port 3000
+
+▲ Next.js 16.1.6 (webpack)
+- Local:         http://127.0.0.1:3000
+- Network:       http://127.0.0.1:3000
+
+✓ Starting...
+  next-swc build: wasm build @next/swc-wasm-nodejs
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\c:\Users\USER\Downloads\entora-website-main\entora-website-main\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\c:\Users\USER\Downloads\entora-website-main\entora-website-main\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+  Skipping creating a lockfile at c:\Users\USER\Downloads\entora-website-main\entora-website-main\.next\dev\lock because we're using WASM bindings
+✓ Ready in 2.2s
+○ Compiling / ...
+ GET / 200 in 10.0s (compile: 9.4s, render: 594ms)
+ GET / 200 in 5.3s (compile: 4.6s, render: 652ms)
+ GET / 200 in 128ms (compile: 6ms, render: 122ms)
+ GET / 200 in 62ms (compile: 6ms, render: 56ms)
+ GET / 200 in 48ms (compile: 4ms, render: 44ms)
+ GET / 200 in 147ms (compile: 4ms, render: 143ms)
+ GET / 200 in 205ms (compile: 113ms, render: 92ms)
+ GET / 200 in 266ms (compile: 3ms, render: 263ms)
+ GET / 200 in 154ms (compile: 6ms, render: 148ms)
+ GET / 200 in 161ms (compile: 6ms, render: 155ms)
+ GET / 200 in 127ms (compile: 4ms, render: 123ms)
+ GET / 200 in 112ms (compile: 3ms, render: 109ms)
+ GET / 200 in 129ms (compile: 5ms, render: 124ms)
+ GET / 200 in 119ms (compile: 3ms, render: 116ms)
+ GET / 200 in 471ms (compile: 126ms, render: 345ms)
+ GET / 200 in 295ms (compile: 8ms, render: 288ms)
+ GET / 200 in 147ms (compile: 4ms, render: 142ms)
+ GET / 200 in 131ms (compile: 3ms, render: 127ms)
+ GET / 200 in 118ms (compile: 3ms, render: 116ms)
+ GET / 200 in 39ms (compile: 3ms, render: 36ms)
+ GET / 200 in 118ms (compile: 3ms, render: 116ms)
+ GET / 200 in 109ms (compile: 3ms, render: 106ms)
+ GET / 200 in 119ms (compile: 3ms, render: 116ms)
+ GET / 200 in 139ms (compile: 79ms, render: 60ms)
+ GET / 200 in 246ms (compile: 4ms, render: 242ms)
+ GET / 200 in 104ms (compile: 3ms, render: 101ms)
+ GET / 200 in 39ms (compile: 3ms, render: 36ms)
+ GET / 200 in 125ms (compile: 3ms, render: 122ms)
+ GET / 200 in 112ms (compile: 3ms, render: 109ms)
+ GET / 200 in 119ms (compile: 3ms, render: 116ms)
+ GET / 200 in 86ms (compile: 39ms, render: 47ms)
+ GET / 200 in 193ms (compile: 5ms, render: 189ms)
+ GET / 200 in 128ms (compile: 4ms, render: 124ms)
+ GET / 200 in 138ms (compile: 3ms, render: 135ms)
+ GET / 200 in 142ms (compile: 5ms, render: 137ms)
+ GET / 200 in 113ms (compile: 3ms, render: 110ms)
+ GET / 200 in 43ms (compile: 5ms, render: 37ms)
+ GET / 200 in 146ms (compile: 5ms, render: 141ms)
+ GET / 200 in 124ms (compile: 4ms, render: 120ms)
+ GET / 200 in 202ms (compile: 109ms, render: 93ms)
+ GET / 200 in 278ms (compile: 4ms, render: 273ms)
+ GET / 200 in 137ms (compile: 4ms, render: 134ms)
+ GET / 200 in 115ms (compile: 3ms, render: 111ms)
+ GET / 200 in 299ms (compile: 30ms, render: 269ms)
+ GET / 200 in 470ms (compile: 156ms, render: 313ms)
