@@ -1,0 +1,30 @@
+[
+  {
+    "title": "VoiceOps AI Assistant",
+    "problem": "Support teams were losing hours triaging repetitive customer requests across channels.",
+    "solution": "Built a multilingual AI assistant with retrieval-based responses and ticket automation.",
+    "tech": ["Next.js", "Node.js", "OpenAI", "PostgreSQL"],
+    "results": "42% faster resolution time, 31% reduction in support costs within 60 days."
+  },
+  {
+    "title": "WorkflowPilot Automation",
+    "problem": "Operations relied on manual handoffs between CRM, invoicing, and fulfillment systems.",
+    "solution": "Developed an event-driven automation engine connecting internal tools and third-party APIs.",
+    "tech": ["TypeScript", "Temporal", "Redis", "AWS"],
+    "results": "Saved 120+ team hours per month and cut process errors by 67%."
+  },
+  {
+    "title": "FinSight SaaS Platform",
+    "problem": "A fintech startup needed an enterprise-grade product to onboard and retain B2B clients.",
+    "solution": "Engineered a secure SaaS platform with analytics dashboards, role-based access, and billing.",
+    "tech": ["Next.js", "Prisma", "Stripe", "Vercel"],
+    "results": "Reached product-market fit in 4 months with 3x increase in trial-to-paid conversion."
+  },
+  {
+    "title": "InsightGrid Data Platform",
+    "problem": "Executives lacked real-time visibility into sales and operational performance.",
+    "solution": "Built a unified data layer and AI insight module with forecast and anomaly detection.",
+    "tech": ["Python", "FastAPI", "BigQuery", "Looker Studio"],
+    "results": "Improved forecasting accuracy to 91% and reduced reporting lag from days to minutes."
+  }
+]

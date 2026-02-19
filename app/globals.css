@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(56, 189, 248, 0.12), transparent 40%),
+    radial-gradient(circle at 88% 10%, rgba(52, 211, 153, 0.1), transparent 32%),
+    radial-gradient(circle at 50% 80%, rgba(6, 182, 212, 0.08), transparent 35%),
+    #020617;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-space-grotesk), sans-serif;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.22);
+  color: #e2e8f0;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-6 md:px-10;
+}
+
+.glass-card {
+  @apply border border-white/10 bg-slate-900/45 backdrop-blur-xl;
+}
+
+.grid-overlay {
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.14) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.14) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at center, black 30%, transparent 95%);
+}
+
+.hero-glow {
+  animation: pulse-glow 8s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.55;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-shell {
+    @apply px-4;
+  }
+}
